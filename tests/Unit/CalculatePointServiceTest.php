@@ -29,6 +29,16 @@ class CalculatePointServiceTest extends TestCase
 
     /**
      * @test
+     * @expectedException \App\Exceptions\PreConditionException
+     * @expectedExceptionMessage 購入金額
+     */
+    public function calcPoint_購入金額が負の数なら例外をスロー()
+    {
+        CalculatePointService::calcPoint(-1);
+    }
+
+    /**
+     * @test
      * @dataProvider dataProvider_for_calcPoint
      * @throws \App\Exceptions\PreConditionException
      */

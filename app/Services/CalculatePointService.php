@@ -21,7 +21,7 @@ class CalculatePointService
     public static function calcPoint(int $amount): int
     {
         if ($amount < 0) {
-            throw new PreConditionException('購入金額が負の数になっています。');
+            throw new PreConditionException('購入金額が負の数');
         }
 
         if ($amount < 1000) {
