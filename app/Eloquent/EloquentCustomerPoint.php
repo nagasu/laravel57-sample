@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 final class EloquentCustomerPoint extends Model
 {
-    protected $table = 'customer_point';
+    protected $table = 'customer_points';
 
     public $timestamps = false;
 

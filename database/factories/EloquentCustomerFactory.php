@@ -1,9 +1,10 @@
 <?php
 
+use App\Eloquent\EloquentCustomer;
 use Faker\Generator as Faker;
 
-$factory->define(Elo::class, function (Faker $faker) {
+$factory->define(EloquentCustomer::class, function (Faker $faker) {
     return [
-        //
+        'name' => $faker->name,
     ];
 });

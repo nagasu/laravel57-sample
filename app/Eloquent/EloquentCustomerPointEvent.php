@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 final class EloquentCustomerPointEvent extends Model
 {
-    protected $table = 'customer_point_event';
+    protected $table = 'customer_point_events';
 
     public $timestamps = false;
 
