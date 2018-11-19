@@ -16,15 +16,15 @@ final class EloquentCustomerPoint extends Model
 {
     protected $table = 'customer_points';
 
+    protected $primaryKey = 'customer_id';
+
     public $timestamps = false;
 
     public function addPoint(int $customerId, int $point)
     {
         return $this->newQuery()
                 ->where('customer_id', $customerId)
-                ->update([
-                    $this->getConnection()->raw('point=point+?', $point)
-                ]) === 1;
+                ->increment('point', $point) === 1;
     }
 
 }

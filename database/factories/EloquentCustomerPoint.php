@@ -1,8 +1,9 @@
 <?php
 
+use App\Eloquent\EloquentCustomerPoint;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(EloquentCustomerPoint::class, function (Faker $faker) {
     return [
         //
     ];
