@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $customer_id
  * @property int $point
  */
-final class EloquentCustomerPoint extends Model
+class EloquentCustomerPoint extends Model
 {
     protected $table = 'customer_points';
 
